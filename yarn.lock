@@ -2367,6 +2367,11 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+expo-ads-admob@~8.4.0:
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/expo-ads-admob/-/expo-ads-admob-8.4.0.tgz#2aa7440393af7ff00b9868d59b0fa06fd0b970e7"
+  integrity sha512-w+ZjMCfCGzB1BNyr0+oYJijSArq3+oTnJSMoMIuDueqtbSyeLCqKfe9zhRqat4qNczvSmJ6tL6DYZweqPLWtYw==
+
 expo-application@~2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/expo-application/-/expo-application-2.4.1.tgz#f8eb4a3a05a0b8a8f38f2e981f587a815945b685"
@@ -2382,6 +2387,14 @@ expo-asset@~8.2.1:
     md5-file "^3.2.3"
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
+
+expo-av@~8.7.0:
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-8.7.0.tgz#01030256dc75cebd5d02060393ba0ad36c10a7f8"
+  integrity sha512-tYw0z//UZm9THicOsu4w0A7Olq/JauTy7kcBR15Fhyppd9wd8Jtq7QYNtf2igd1R+byS2L0AGwE0nazlbQR+Qw==
+  dependencies:
+    lodash "^4.17.15"
+    nullthrows "^1.1.0"
 
 expo-constants@~9.3.3:
   version "9.3.5"
