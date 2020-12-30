@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         position: 'absolute',
-        bottom: 100,
+        bottom: 150,
         alignItems: 'center',
         width: Dimensions.get('window').width,
     },
