@@ -1,16 +1,20 @@
-import React from 'react'
-import {Image, Pressable, StyleSheet, Text, TouchableOpacity, View} from 'react-native'
+import React, {useState} from 'react'
+import {Image, StyleSheet, TouchableOpacity, View} from 'react-native'
 import {Audio} from 'expo-av';
 
 const PlayButton = ({suara}) => {
-    const [sound, setSound] = React.useState();
+    const [sound, setSound] = useState();
 
     const playSound = async (suara) => {
-        console.log('Loading Sound');
-        const {sound} = await Audio.Sound.createAsync(suara);
-        setSound(sound);
-        console.log('Playing Sound');
-        await sound.playAsync();
+        console.log('Loading Sound' + suara);
+        try {
+            const {sound} = await Audio.Sound.createAsync(suara);
+            setSound(sound);
+            console.log('Playing Sound');
+            await sound.playAsync();
+        } catch (e) {
+            console.error(e);
+        }
     }
 
     React.useEffect(() => {
@@ -30,7 +34,6 @@ const PlayButton = ({suara}) => {
         </View>
     )
 }
-
 export default PlayButton
 
 const styles = StyleSheet.create({

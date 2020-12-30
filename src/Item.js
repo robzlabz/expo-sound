@@ -2,8 +2,7 @@ import React from 'react'
 import {ImageBackground, StyleSheet, Text, View, Dimensions, Image} from 'react-native'
 import PlayButton from './PlayButton'
 
-const Item = (props) => {
-    const {image, sound} = props.item
+const Item = ({image, sound}) => {
     return (
         <View style={styles.container}>
             <ImageBackground source={image} style={styles.imageBackground} />
